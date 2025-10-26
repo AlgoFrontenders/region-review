@@ -1,19 +1,117 @@
-<h1>Галерея лучших мест</h1>
-<table>
-    <tr>
-        <td>
-            <img style="width: 200; height: auto;" src  = "https://i.pinimg.com/736x/cb/e9/23/cbe9236daa06f03b521080f73b0df878.jpg">
-        </td>
-        <td>
-            <img style="width: 350; height: auto;" src  = "https://storage.yandexcloud.net/storage.yasno.media/nat-geo/images/2019/5/16/7db8e12f0dcd4feea1686f54395db983.max-1200x800.jpg">
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img style="width: 200; height: auto;" src  = "https://i.pinimg.com/736x/cb/e9/23/cbe9236daa06f03b521080f73b0df878.jpg">
-        </td>
-        <td>
-            <img style="width: 200; height: auto;" src  = "https://i.pinimg.com/736x/cb/e9/23/cbe9236daa06f03b521080f73b0df878.jpg">
-        </td>
-    </tr>
-</table>
+<title>Галерея лучших мест</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .gallery-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .gallery-table td {
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .gallery-table img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .gallery-table img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .gallery-table {
+                display: block;
+            }
+            
+            .gallery-table tr {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .gallery-table td {
+                width: 100% !important;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Галерея лучших мест</h1>
+        <table class="gallery-table">
+            <tr>
+                <td style="width: 30%;">
+                    <img src="https://i.pinimg.com/736x/cb/e9/23/cbe9236daa06f03b521080f73b0df878.jpg" 
+                         alt="Живописный пейзаж 1" >
+                </td>
+                <td style="width: 70%;">
+                    <img src="https://i.pinimg.com/736x/ff/7a/6d/ff7a6dcc347e4d834d822ef72803ba25.jpg" 
+                         alt="Живописный пейзаж 2" >
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;">
+                    <img src="https://i.pinimg.com/550x/7b/57/53/7b5753a07d8f42b292a32f1c7ff8846a.jpg" 
+                         alt="Живописный пейзаж 3" >
+                </td>
+                <td style="width: 50%;">
+                    <img src="https://i.pinimg.com/originals/21/61/68/216168ba08ec8e29191112a0f7ecb613.jpg  " 
+                         alt="Живописный пейзаж 4" >
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;">
+                    <img src="https://i.pinimg.com/474x/a1/a3/ef/a1a3efc8981d6bdd4f0085ccc921622f.jpg"
+                    alt="Живописный пейзаж 5">
+                </td>
+                <td style="width: 50%;">
+                    <img src="https://i.pinimg.com/736x/10/70/9d/10709d65f97d733d833db086942b741c.jpg"
+                    alt="Живописный пейзаж 6">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
