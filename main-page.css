@@ -1,0 +1,44 @@
+body {
+    font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url('https://i.postimg.cc//image.png');
+    background-repeat: repeat;
+    
+}
+p{
+    font-size: 25px
+}
+button{
+    cursor: pointer;
+    width: auto;
+    height: 50px;
+    font-family: inherit;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+   
+    
+}
+
+#header{
+    color:dodgerblue;
+    background-color: aliceblue;
+   display: flex;
+   justify-content: space-between;
+    align-items: center;
+}
+
+#second {
+    height: 150px;
+}
+
+#gerb {
+    width:300px
+}
+
+#pan{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
